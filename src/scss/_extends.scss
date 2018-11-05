@@ -1,0 +1,24 @@
+//@extends
+%font-base{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    // font-size: 1em; 
+}
+%font-titles{
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style: normal;
+    // font-size: 1.5em; 
+}
+%font-serif{
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em; 
+}
+$font-normal: normal;
+$black-main:#111111;
+$grey-light:#f3f3f3;
+$white: #ffffff;
+$blue-main: #1770c1;
