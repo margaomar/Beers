@@ -256,15 +256,18 @@ body{
             .modal-tittle{
                 background-color: $blue-main;
                 color: $white;
+                text-transform: uppercase;
                 padding: 1em;
                 // width: 100%;
                 position: relative;
                 .modal-closed{
                     position: absolute;
-                    right: 5%;
+                    right: 2%;
                     top: 50%;
                     transform: translateY(-50%);
                     font-size: 1.3em;
+                    padding: .5em;
+                    cursor: pointer;
                 }
             }
             .modal-description{
@@ -287,6 +290,7 @@ body{
             text-align: center;
 
             li{
+                cursor: pointer;
                 display: inline;
                 color: $blue-main;
                 font-size: 1.4em;
