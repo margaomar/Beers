@@ -7,6 +7,9 @@ $alert-low: #ffa500;
 body{
     font-size: 1em;
 }
+.hide{
+    display: none;
+}
 .alert-low{
     background-color: $alert-low;
     color: $white;
@@ -142,8 +145,9 @@ body{
             @extend %font-base;
             
             h1{
-                line-height: 3.5em;
+                line-height: 1.2em;
                 font-size: 1.5em;
+                margin-bottom: 1.3em;
             }
             p{
                 font-size:1em;
@@ -172,7 +176,7 @@ body{
             }
         }
     }
-    article.section-detail{
+    article.section-detail{ ///Random page
         display: flex;
         flex-direction: column;
         position: relative;
@@ -183,7 +187,7 @@ body{
             margin: 3em auto;
             display: grid;
             padding: 0;
-            grid-template-rows: 1fr minmax(max-content,max-content) minmax(max-content,max-content) 1fr 1fr;
+            grid-template-rows: .5fr minmax(max-content,max-content) minmax(max-content,max-content) 1fr .5fr;
             grid-template-columns: 1fr 1fr 1fr 1fr;
             position: relative;
 
@@ -200,6 +204,7 @@ body{
                 padding: 0;
                 h2{
                     font-size: 1.3em;
+                    line-height: 1.2em;
                     margin-bottom: 1em;
                     color: $blue-main;
                 }
@@ -218,10 +223,16 @@ body{
                 font-size: 1em;
                 color: $white;
                 background-color: $blue-main;
-            }
-            .btn-item-modal{
+                cursor: pointer;
+            
                 grid-column: 3 / 4;
                 grid-row: 4 / 5;
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    background-color: $blue-main -5%;
+                }
             }
             .btn-section-another{
                 background-color: $alert-low;
@@ -234,12 +245,17 @@ body{
                 text-align: center;
                 font-size: 1em;
                 color: $white;
+                cursor: pointer;
+
 
                 position: absolute;
                 bottom: -20%;
                 width: 30%;
                 left: 50%;
                 transform: translateX(-50%);
+                &:focus{
+                    outline: none;
+                }
             } 
         }
         
