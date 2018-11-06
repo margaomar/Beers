@@ -1,0 +1,41 @@
+var beers='';
+        for(let i=0; i<6; i++){
+            $beersWrap.empty();
+        
+            var $beerName = data[i].name;
+            var $beerDescription = data[i].description;
+            var $beerImageUrl = data[i].image_url;
+            var $beerAbv = data[i].abv;
+            var $beerIbu = data[i].ibu;
+            var $beerPh = data[i].ph;
+            console.log($beerName);
+            beers += '<article class="item-containers"><figure><img src=' + $beerImageUrl + ' alt="' + $beerName + '"></figure>'; 
+            beers += '<div class="item-description"><h1>' + $beerName + '</h1>';
+            beers += '<p>' + $beerDescription + '</p></div>';
+            beers += '<ul class="item-values"><li>ABV<span>' + $beerAbv + '</span></li><li>IBU<span>' + $beerIbu + '</span></li><li class="alert-low">pH<span>' + $beerPh + '</span></li></ul></article>'; 
+
+            $beersWrap.append(beers);
+        }
+
+
+
+        $.each(data, function(index, value) { 
+            // console.log(getBeers);
+            $beersWrap.empty();
+            let i = 0;
+            i++;
+            
+            var $beerName = data[i].name;
+            console.log(data[i]);
+            var $beerDescription = data[i].description;
+            var $beerImageUrl = data[i].image_url;
+            var $beerAbv = data[i].abv;
+            var $beerIbu = data[i].ibu;
+            var $beerPh = data[i].ph;
+            console.log($beerName);
+            beers += '<article class="item-containers"><figure><img src=' + $beerImageUrl + ' alt="' + $beerName + '"></figure>'; 
+            beers += '<div class="item-description"><h1>' + $beerName + '</h1>';
+            beers += '<p>' + $beerDescription + '</p></div>';
+            beers += '<ul class="item-values"><li>ABV<span>' + $beerAbv + '</span></li><li>IBU<span>' + $beerIbu + '</span></li><li class="alert-low">pH<span>' + $beerPh + '</span></li></ul></article>'; 
+
+            $beersWrap.append(beers);
