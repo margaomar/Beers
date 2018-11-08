@@ -66,5 +66,4 @@ JQuery | AJAX | API's | JS | ES6 | Babel | HTML5 | CSS3 | Sass | Gulp | Git | Gi
 
 ----
 ## Project developed by 
- **[Marga Omar]
-(https://margaomar.com)**
+ **[Marga Omar](https://margaomar.com)**
