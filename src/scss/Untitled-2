@@ -1,6 +1,7 @@
 var beers='';
+$beersWrap.empty();
         for(let i=0; i<6; i++){
-            $beersWrap.empty();
+            
         
             var $beerName = data[i].name;
             var $beerDescription = data[i].description;
@@ -39,3 +40,30 @@ var beers='';
             beers += '<ul class="item-values"><li>ABV<span>' + $beerAbv + '</span></li><li>IBU<span>' + $beerIbu + '</span></li><li class="alert-low">pH<span>' + $beerPh + '</span></li></ul></article>'; 
 
             $beersWrap.append(beers);
+
+
+
+
+
+
+
+            
+ 
+      
+
+        
+      <!-- example of items -->
+      <!-- <article class="item-containers">
+        <figure>
+          <img src="https://images.punkapi.com/v2/192.png" alt="Trashy Blonde Beer">
+        </figure>
+        <div class="item-description">
+          <h1>Trashy Blonde</h1>
+          <p>The bar tab of another hops is green. A Guiness beyond a black velvet, a Long Trail Ale, and a crazy Hoptoberfest are what made America great! Indeed, a Labatts related to the bar tab wastedly organizes the self-actualized Strohs.</p>
+        </div>
+        <ul class="item-values">
+          <li>ABV<span>7.2</span></li>
+          <li>IBU<span>59</span></li>
+          <li class="alert-low">pH<span>4.4</span></li>
+        </ul>
+      </article>
