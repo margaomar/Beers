@@ -10,6 +10,7 @@ $beersWrap.empty();
             var $beerIbu = data[i].ibu;
             var $beerPh = data[i].ph;
             console.log($beerName);
+            
             beers += '<article class="item-containers"><figure><img src=' + $beerImageUrl + ' alt="' + $beerName + '"></figure>'; 
             beers += '<div class="item-description"><h1>' + $beerName + '</h1>';
             beers += '<p>' + $beerDescription + '</p></div>';
