@@ -1,6 +1,6 @@
 # Project: Beers Api Project.
 ## About this project
-You can see this project on-line, going to [Beers!](http://margaomar.github.io/BeersApi/index.html)
+You can see this project on-line, going to [Beers!](http://http://margaomar.com/en/beers/build/)
 
 ----
 ## Goals of the site
